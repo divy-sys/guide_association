@@ -1,0 +1,8 @@
+<h1> Article Information </h1>
+
+<p>Title <%= @article.title %> </p>
+<p>Description <%= @article.description%> </p>
+<p>Create By: <%= @article.user.name%> </p>
+
+
+<%= link_to "return", articles_path  %>
