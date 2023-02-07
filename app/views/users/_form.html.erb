@@ -1,0 +1,8 @@
+<%= form_with(model: @user) do |user| %>
+
+  <h3>Title </h3>
+  <p><%= user.text_field :name %></p>
+  
+  <p><%= user.submit  %> </p>
+
+<% end %>

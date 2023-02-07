@@ -1,0 +1,14 @@
+<h1>Articles Information </h1>
+<%= link_to "Create New Person", new_article_path %>
+<%= link_to "Create New User", new_user_path %>
+
+<% @articles.each do |art| %>
+
+<p>Title: <%= art.title %> 
+<p>Description: <%= art.description %> 
+<%= link_to "Show", article_path(art)  %> 
+<%= link_to "Edit", edit_article_path(art) %>
+<%= link_to "delete", article_path(art) , data: {turbo_method: :delete, turbo_confirm: "Are you sure want to delete ?"} %>
+<% end %>
+
+
